@@ -15,13 +15,123 @@
   }
 
   &__images {
-    background-image: url("../img/challenge-img-1.png");
+    // background-image: url("../img/challenge-img-1.png");
     @include bg-img;
     position: relative;
 
     @media only screen and (max-width: $tab-land) {
-      // grid-row: 2/-1;
       height: 100rem;
+    }
+
+    .line-1 {
+      height: 95rem;
+      width: 95rem;
+      border-radius: 50%;
+      border: 1px solid hsla(0, 0%, 100%, 0.15);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      div {
+        height: 7.2rem;
+        width: 7.2rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(30px);
+        position: absolute;
+      }
+
+      .circle-1 {
+        top: 13%;
+        left: 9%;
+      }
+      .circle-2 {
+        top: -4%;
+        left: 42%;
+      }
+      .circle-3 {
+        bottom: 7%;
+        left: 15%;
+      }
+      .circle-4 {
+        bottom: 3%;
+        left: 70%;
+      }
+    }
+    .line-2 {
+      height: 65rem;
+      width: 65rem;
+      border-radius: 50%;
+      border: 1px solid hsla(0, 0%, 100%, 0.3);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      div {
+        height: 7.2rem;
+        width: 7.2rem;
+        border-radius: 50%;
+        // background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(30px);
+        position: absolute;
+      }
+
+      .circle-1 {
+        top: 11%;
+        left: 7%;
+        background-image: url("../img/testimonial-img-1.png");
+        @include bg-img;
+      }
+      .circle-2 {
+        top: 49%;
+        left: -5%;
+        background-image: url("../img/testimonial-img-2.png");
+        @include bg-img;
+      }
+      .circle-3 {
+        bottom: 4%;
+        left: 16%;
+        background-image: url("../img/testimonial-img-3.png");
+        @include bg-img;
+      }
+      .circle-4 {
+        bottom: 25%;
+        left: 90%;
+        background-image: url("../img/testimonial-img-4.png");
+        @include bg-img;
+      }
+    }
+    .line-3 {
+      height: 39rem;
+      width: 39rem;
+      border-radius: 50%;
+      border: 1px solid hsla(0, 0%, 100%, 0.6);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      div {
+        height: 7.2rem;
+        width: 7.2rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(30px);
+        position: absolute;
+      }
+
+      .circle-1 {
+        top: 30%;
+        left: -8%;
+      }
+      .circle-2 {
+        top: 47%;
+        left: 90%;
+        background-image: url("../img/testimonial-img-5.png");
+        @include bg-img;
+      }
     }
   }
 
@@ -32,6 +142,7 @@
     bottom: -10rem;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 
     img {
       @include img-size;
