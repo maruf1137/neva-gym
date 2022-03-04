@@ -33,8 +33,14 @@ body {
   overflow-x: hidden;
 }
 
-.main {
+.main-1 {
   background-image: url("../img/bg-1.jpg");
+  height: auto;
+  @include bg-img;
+}
+
+.main-2 {
+  background-image: url("../img/bg-2.jpg");
   height: auto;
   @include bg-img;
 }

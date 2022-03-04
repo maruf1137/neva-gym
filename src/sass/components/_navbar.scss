@@ -4,6 +4,10 @@
   padding: 4rem 10rem;
   align-items: center;
 
+  @media only screen and (max-width: $mbl-port) {
+    padding: 4rem 4rem;
+  }
+
   &__logo {
     width: 13.7rem;
     height: 2.9rem;

@@ -1,0 +1,33 @@
+.build {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: -25rem;
+
+  @media only screen and (max-width: $tab-land) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 3rem;
+  }
+
+  &__content {
+    padding: 5.6rem 3.8rem;
+    background-color: $color-primary;
+  }
+
+  .btn {
+    background-color: $color-white;
+    color: $color-primary;
+  }
+
+  &__img {
+    @include img-size;
+
+    @media only screen and (max-width: $tab-land) {
+      grid-row: 1/2;
+    }
+
+    img {
+      @include img-size;
+      object-fit: cover;
+    }
+  }
+}

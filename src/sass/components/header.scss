@@ -34,6 +34,10 @@
       transform: translateY(0);
       margin: 0 auto;
     }
+    @media only screen and (max-width: $mbl-port) {
+      height: 56.5rem;
+      width: 36rem;
+    }
 
     img {
       @include img-size;

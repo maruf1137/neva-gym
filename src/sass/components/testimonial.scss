@@ -6,16 +6,21 @@
   display: grid;
   grid-template-columns: repeat(2, 40rem 1fr);
   gap: 9.6rem;
+  align-items: center;
 
-  &__content {
+  @media only screen and (max-width: $tab-land) {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
   }
 
   &__card {
     display: inline-block;
     margin-right: 2.4rem;
     background-color: $color-primary;
-    padding: 1.5rem 4.5rem 1.5rem 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     clip-path: polygon(25% 0%, 84% 0, 100% 19%, 100% 100%, 0 99%, 0 0);
+    width: 12.5rem;
+    height: 13rem;
 
     &--icon {
       margin-bottom: 1;
@@ -40,5 +45,142 @@
   }
 
   &__slider {
+    width: 86rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    @media only screen and (max-width: $tab-land) {
+      height: 31rem;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $mbl-port) {
+      height: 36rem;
+    }
+
+    .slider {
+      width: 100%;
+      height: 23rem;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-30%);
+
+      @media only screen and (max-width: $tab-land) {
+        top: 0;
+        transform: translateY(0);
+      }
+    }
+
+    .slide {
+      width: 44rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.5s;
+      overflow: hidden;
+
+      @media only screen and (max-width: $tab-land) {
+        width: 100%;
+      }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(40px);
+      padding: 2rem 3rem;
+      margin-right: 2rem;
+
+      &__stars {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .icon {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+
+      .text {
+        font-size: 1.6rem;
+        opacity: 0.5;
+        text-align: start;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        &__img {
+          img {
+          }
+        }
+
+        &__name {
+          font-size: 1.6rem;
+          opacity: 1;
+          color: $color-white;
+        }
+      }
+    }
+
+    .slider__btn {
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      height: 5rem;
+      width: 5rem;
+      position: absolute;
+      top: -9rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (max-width: $tab-land) {
+        top: 26rem;
+      }
+
+      @media only screen and (max-width: $mbl-port) {
+        top: 30rem;
+      }
+
+      .icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: $color-white;
+        opacity: 0.5;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        .icon {
+          opacity: 1;
+        }
+      }
+    }
+    .slider__btn--right {
+      right: 25%;
+
+      @media only screen and (max-width: $laptop-port) {
+        right: 30%;
+      }
+
+      @media only screen and (max-width: $tab-land) {
+        right: 40%;
+      }
+    }
+    .slider__btn--left {
+      right: 35%;
+      @media only screen and (max-width: $laptop-port) {
+        right: 40%;
+      }
+
+      @media only screen and (max-width: $tab-land) {
+        right: 60%;
+      }
+    }
   }
 }
