@@ -1,0 +1,38 @@
+h1.heading {
+  font-weight: 700;
+  font-size: 7.2rem;
+  line-height: 8.5rem;
+  letter-spacing: 0.02em;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+h2.heading {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.6rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.text {
+  color: $color-white;
+  font-weight: 400;
+  font-size: 1.8rem;
+  opacity: 0.5;
+  font-family: $font-secondary;
+  line-height: 170%;
+  letter-spacing: 0.02em;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}

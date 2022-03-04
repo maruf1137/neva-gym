@@ -1,0 +1,161 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10rem;
+  align-items: center;
+
+  &__logo {
+    width: 13.7rem;
+    height: 2.9rem;
+
+    img {
+      @include img-size;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    @media only screen and (max-width: $tab-port) {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    color: $color-white;
+    text-transform: uppercase;
+    opacity: 0.6;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 0 4rem;
+
+    @media only screen and (max-width: $tab-port) {
+      display: none;
+    }
+  }
+
+  &__login,
+  &__signup {
+    color: $color-white;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    opacity: 0.6;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__login {
+  }
+
+  &__signup {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.8rem 2rem;
+  }
+}
+
+.bars {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: none;
+
+  @media only screen and (max-width: $tab-port) {
+    display: block;
+  }
+
+  .icon {
+    @include img-size;
+    opacity: 0.6;
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.mbl-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("../img/bg-1.jpg");
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+
+  @media only screen and (max-width: $tab-port) {
+    display: block;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 6.5rem 0;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .nav__list,
+  .nav__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem 0;
+    align-items: start;
+  }
+
+  .nav__list {
+    margin-top: 6.4rem;
+  }
+
+  .nav__buttons {
+    margin-top: 8rem;
+  }
+
+  .nav__link {
+    font-size: 2rem;
+  }
+
+  .btn-close {
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+    background-color: transparent;
+
+    .icon {
+      @include img-size;
+      fill: $color-white;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.show-nav {
+  .mbl-nav {
+    transform: translateX(0);
+  }
+}

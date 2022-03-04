@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $laptop-land) {
+    font-size: 56%;
+  }
+  @media only screen and (max-width: $laptop-port) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $mbl-small) {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  color: $color-primary;
+  overflow-x: hidden;
+}
+
+.main {
+  background-image: url("../img/bg-1.jpg");
+  height: auto;
+  @include bg-img;
+}
+.custom-container {
+  max-width: 140rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 90.625em) {
+    padding: 0 5rem;
+  }
+
+  @media only screen and (max-width: $mbl-small) {
+    padding: 0 2rem;
+  }
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
