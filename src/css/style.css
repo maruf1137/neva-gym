@@ -87,6 +87,11 @@ h1.heading span {
   text-transform: uppercase;
   display: block;
 }
+@media only screen and (max-width: 23.75em) {
+  h1.heading {
+    font-size: 5.2rem;
+  }
+}
 
 h2.heading {
   font-weight: 700;
@@ -1014,13 +1019,33 @@ a:hover {
     padding: 4rem 4rem;
   }
 }
+.nav .logo {
+  font-size: 7rem;
+  font-weight: 900;
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  font-style: italic;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 62em) {
+  .nav .logo {
+    font-size: 6rem;
+  }
+}
 .nav__logo {
   width: 13.7rem;
   height: 2.9rem;
 }
+@media only screen and (max-width: 35.9375em) {
+  .nav__logo {
+    width: 10rem;
+    height: 2.3rem;
+  }
+}
 .nav__logo img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .nav__list {
   display: flex;
@@ -1085,6 +1110,7 @@ a:hover {
 .bars .icon {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   opacity: 0.6;
   transition: all 0.3s;
 }
@@ -1114,6 +1140,21 @@ a:hover {
   gap: 6.5rem 0;
   justify-content: start;
   align-items: start;
+}
+.mbl-nav__logo {
+  width: 13.7rem;
+  height: 2.9rem;
+}
+@media only screen and (max-width: 35.9375em) {
+  .mbl-nav__logo {
+    width: 10rem;
+    height: 2.3rem;
+  }
+}
+.mbl-nav__logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .mbl-nav .nav__list,
 .mbl-nav .nav__buttons {
@@ -1159,6 +1200,7 @@ a:hover {
 .mbl-nav .btn-close .icon {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   fill: #fff;
   opacity: 0.6;
 }
@@ -1206,13 +1248,14 @@ a:hover {
 }
 @media only screen and (max-width: 30em) {
   .header__img {
-    height: 56.5rem;
-    width: 36rem;
+    width: 33.5rem;
+    height: 38.8rem;
   }
 }
 .header__img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .price {
@@ -1283,6 +1326,7 @@ a:hover {
 .join .btn-circle .icon {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   transform: scale(0.5);
   fill: #fff;
 }
@@ -1294,6 +1338,7 @@ a:hover {
 .join__img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .about__container {
@@ -1334,6 +1379,7 @@ a:hover {
 .about__img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   object-fit: cover;
   object-position: top center;
 }
@@ -1412,25 +1458,40 @@ a:hover {
   height: 43rem;
   width: 43rem;
 }
+@media only screen and (max-width: 35.9375em) {
+  .experience__images {
+    width: 32.7rem;
+    height: 36.7rem;
+  }
+}
 .experience__img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .experience__img--1 {
   background: url("../img/experience-img-2.png") no-repeat;
+  background-position: top left;
+  background-size: cover;
 }
 .experience__img--2 {
   position: absolute;
   background: url("../img/experience-img-1.png") no-repeat;
   width: 50%;
+  background-position: top center;
+  background-size: cover;
 }
 .experience__img--3 {
   background: url("../img/experience-img-4.png") no-repeat;
+  background-position: top right;
+  background-size: cover;
 }
 .experience__img--4 {
   position: absolute;
   background: url("../img/experience-img-3.png") no-repeat;
   width: 50%;
+  background-position: top center;
+  background-size: cover;
 }
 
 .slider-1 {
@@ -1438,11 +1499,13 @@ a:hover {
   top: 0;
   height: 100%;
   width: 100%;
+  object-fit: cover;
   z-index: 99;
 }
 .slider-1 .input-1 {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   outline: none;
   background: none;
   -webkit-appearance: none;
@@ -1509,11 +1572,13 @@ a:hover {
   top: 0;
   height: 100%;
   width: 100%;
+  object-fit: cover;
   z-index: 99;
 }
 .slider-2 .input-2 {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   outline: none;
   background: none;
   -webkit-appearance: none;
@@ -1727,6 +1792,7 @@ a:hover {
 .challenge__img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   object-fit: cover;
 }
 @media only screen and (max-width: 64em) {
@@ -2040,6 +2106,7 @@ a:hover {
 .team__img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .team__name {
   color: #fff;
@@ -2073,6 +2140,7 @@ a:hover {
 .build__img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 @media only screen and (max-width: 62em) {
   .build__img {
@@ -2082,6 +2150,7 @@ a:hover {
 .build__img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   object-fit: cover;
 }
 
@@ -2119,6 +2188,7 @@ a:hover {
 .footer__logo img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .footer .social__list {
   display: flex;
@@ -2246,6 +2316,7 @@ a:hover {
 .learn__icon .icon {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   transform: scale(0.5);
   fill: #fff;
 }

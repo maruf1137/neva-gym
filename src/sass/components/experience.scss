@@ -46,9 +46,6 @@
     }
   }
 
-  &__cards--1 {
-  }
-
   &__card {
     position: relative;
     overflow: hidden;
@@ -58,7 +55,11 @@
     display: flex;
     height: 43rem;
     width: 43rem;
-    // position: relative;
+
+    @media only screen and (max-width: $mbl-land) {
+      width: 32.7rem;
+      height: 36.7rem;
+    }
   }
 
   &__img {
@@ -67,19 +68,27 @@
 
   &__img--1 {
     background: url("../img/experience-img-2.png") no-repeat;
+    background-position: top left;
+    background-size: cover;
   }
   &__img--2 {
     position: absolute;
     background: url("../img/experience-img-1.png") no-repeat;
     width: 50%;
+    background-position: top center;
+    background-size: cover;
   }
   &__img--3 {
     background: url("../img/experience-img-4.png") no-repeat;
+    background-position: top right;
+    background-size: cover;
   }
   &__img--4 {
     position: absolute;
     background: url("../img/experience-img-3.png") no-repeat;
     width: 50%;
+    background-position: top center;
+    background-size: cover;
   }
 }
 

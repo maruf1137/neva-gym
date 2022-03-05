@@ -10,6 +10,10 @@ h1.heading {
     text-transform: uppercase;
     display: block;
   }
+
+  @media only screen and (max-width: $mbl-small) {
+    font-size: 5.2rem;
+  }
 }
 
 h2.heading {

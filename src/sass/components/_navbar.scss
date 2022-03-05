@@ -8,9 +8,27 @@
     padding: 4rem 4rem;
   }
 
+  .logo {
+    font-size: 7rem;
+    font-weight: 900;
+    font-family: $font-primary;
+    color: $color-white;
+    font-style: italic;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: $tab-land) {
+      font-size: 6rem;
+    }
+  }
+
   &__logo {
     width: 13.7rem;
     height: 2.9rem;
+
+    @media only screen and (max-width: $mbl-land) {
+      width: 10rem;
+      height: 2.3rem;
+    }
 
     img {
       @include img-size;
@@ -117,6 +135,26 @@
     gap: 6.5rem 0;
     justify-content: start;
     align-items: start;
+
+    // .logo {
+    //   font-size: 10rem;
+    //   font-weight: 900;
+    //   font-family: $font-primary;
+    // }
+  }
+
+  &__logo {
+    width: 13.7rem;
+    height: 2.9rem;
+
+    @media only screen and (max-width: $mbl-land) {
+      width: 10rem;
+      height: 2.3rem;
+    }
+
+    img {
+      @include img-size;
+    }
   }
 
   .nav__list,
