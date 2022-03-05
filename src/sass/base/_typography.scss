@@ -11,8 +11,8 @@ h1.heading {
     display: block;
   }
 
-  @media only screen and (max-width: $mbl-small) {
-    font-size: 5.2rem;
+  @media only screen and (max-width: $mbl-port) {
+    font-size: 40px;
   }
 }
 
@@ -23,6 +23,10 @@ h2.heading {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media only screen and (max-width: $mbl-port) {
+    font-size: 28px;
+  }
 }
 
 .text {
