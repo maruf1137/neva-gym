@@ -137,6 +137,25 @@
 
   .nav__link {
     font-size: 2rem;
+    transition: all 0.3s;
+    display: inline-block;
+    padding: 0.5rem;
+
+    &:hover {
+      transform: scale(1.2) translateX(1.5rem);
+    }
+  }
+
+  .nav__login {
+    padding: 0.5rem;
+  }
+  .nav__login,
+  .nav__signup {
+    display: inline-block;
+
+    &:hover {
+      transform: scale(1.2) translateX(1.5rem);
+    }
   }
 
   .btn-close {

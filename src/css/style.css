@@ -1126,6 +1126,23 @@ a:hover {
 }
 .mbl-nav .nav__link {
   font-size: 2rem;
+  transition: all 0.3s;
+  display: inline-block;
+  padding: 0.5rem;
+}
+.mbl-nav .nav__link:hover {
+  transform: scale(1.2) translateX(1.5rem);
+}
+.mbl-nav .nav__login {
+  padding: 0.5rem;
+}
+.mbl-nav .nav__login,
+.mbl-nav .nav__signup {
+  display: inline-block;
+}
+.mbl-nav .nav__login:hover,
+.mbl-nav .nav__signup:hover {
+  transform: scale(1.2) translateX(1.5rem);
 }
 .mbl-nav .btn-close {
   height: 2.5rem;
