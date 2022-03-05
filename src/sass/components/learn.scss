@@ -1,0 +1,49 @@
+.learn-section {
+  padding: 8rem 0;
+}
+
+.learn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.6rem 9.6rem;
+
+  @media only screen and (max-width: $tab-land) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+
+    @media only screen and (max-width: $tab-land) {
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: $color-primary;
+    border-radius: 50%;
+
+    .icon {
+      @include img-size;
+      transform: scale(0.5);
+      fill: $color-white;
+    }
+  }
+
+  .text {
+    font-size: 2rem;
+    color: $color-white;
+    opacity: 1;
+  }
+}

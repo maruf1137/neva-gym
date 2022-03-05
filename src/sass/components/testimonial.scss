@@ -184,3 +184,55 @@
     }
   }
 }
+
+.about-page {
+  .testimonial {
+    grid-template-columns: repeat(1, 1fr);
+
+    @media only screen and (max-width: $tab-land) {
+    }
+
+    &__slider {
+      width: 100%;
+      height: 34vh;
+
+      .slider {
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+      }
+
+      .slide {
+        @media only screen and (max-width: $tab-land) {
+          width: 50%;
+        }
+        @media only screen and (max-width: $mbl-land) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .slider__btn {
+        top: 120%;
+
+        @media only screen and (max-width: $tab-land) {
+          top: 142%;
+        }
+      }
+      .slider__btn--right {
+        right: 55%;
+
+        @media only screen and (max-width: $mbl-land) {
+          right: 60%;
+        }
+      }
+      .slider__btn--left {
+        right: 45%;
+
+        @media only screen and (max-width: $mbl-land) {
+          right: 40%;
+        }
+      }
+    }
+  }
+}

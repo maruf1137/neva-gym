@@ -48,7 +48,7 @@ const slider = function () {
   const btnLeft = document.querySelector(".slider__btn--left");
   const btnRight = document.querySelector(".slider__btn--right");
 
-  let curSlide = 0;
+  let curSlide = 1;
   const maxSlide = slides.length;
 
   const goToSlide = function (slide) {
@@ -78,7 +78,7 @@ const slider = function () {
   };
 
   const init = function () {
-    goToSlide(0);
+    goToSlide(1);
   };
   init();
 

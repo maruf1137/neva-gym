@@ -135,3 +135,67 @@
     }
   }
 }
+
+.about {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+
+    @media only screen and (max-width: $tab-land) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: $mbl-land) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    background-color: $color-primary;
+    padding: 2rem;
+    position: relative;
+    width: 100%;
+    height: 34.5rem;
+
+    @media only screen and (max-width: $tab-land) {
+      height: 35.5rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+      @include img-size;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+
+  .age {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    background: #fff;
+    padding: 1rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+
+    &__start {
+      margin-left: 1rem;
+    }
+
+    &__cur {
+    }
+  }
+}

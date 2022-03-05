@@ -83,6 +83,10 @@ h1.heading {
   color: #fff;
   text-transform: uppercase;
 }
+h1.heading span {
+  text-transform: uppercase;
+  display: block;
+}
 
 h2.heading {
   font-weight: 700;
@@ -1292,8 +1296,67 @@ a:hover {
   width: 100%;
 }
 
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+@media only screen and (max-width: 62em) {
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .about__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.about__item {
+  background-color: #7540f4;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  height: 34.5rem;
+}
+@media only screen and (max-width: 62em) {
+  .about__item {
+    height: 35.5rem;
+  }
+}
+.about__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.about .age {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  background: #fff;
+  padding: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.about .age__start {
+  margin-left: 1rem;
+}
 .experience-section {
-  padding: 5rem 0;
+  padding: 12rem 0;
 }
 
 .experience {
@@ -1879,8 +1942,56 @@ a:hover {
   }
 }
 
+.about-page .testimonial {
+  grid-template-columns: repeat(1, 1fr);
+}
+.about-page .testimonial__slider {
+  width: 100%;
+  height: 34vh;
+}
+.about-page .testimonial__slider .slider {
+  top: 0;
+  left: 0;
+  transform: translateY(0);
+}
+@media only screen and (max-width: 62em) {
+  .about-page .testimonial__slider .slide {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .about-page .testimonial__slider .slide {
+    width: 100%;
+    text-align: center;
+  }
+}
+.about-page .testimonial__slider .slider__btn {
+  top: 120%;
+}
+@media only screen and (max-width: 62em) {
+  .about-page .testimonial__slider .slider__btn {
+    top: 142%;
+  }
+}
+.about-page .testimonial__slider .slider__btn--right {
+  right: 55%;
+}
+@media only screen and (max-width: 35.9375em) {
+  .about-page .testimonial__slider .slider__btn--right {
+    right: 60%;
+  }
+}
+.about-page .testimonial__slider .slider__btn--left {
+  right: 45%;
+}
+@media only screen and (max-width: 35.9375em) {
+  .about-page .testimonial__slider .slider__btn--left {
+    right: 40%;
+  }
+}
+
 .team-section {
-  padding: 8rem 0;
+  padding: 2rem 0 8rem 0;
 }
 .team-section h2 {
   margin-bottom: 12rem;
@@ -2095,6 +2206,52 @@ a:hover {
   .advise h3 {
     width: 100%;
   }
+}
+.learn-section {
+  padding: 8rem 0;
+}
+
+.learn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.6rem 9.6rem;
+}
+@media only screen and (max-width: 62em) {
+  .learn {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.learn__left, .learn__right {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+@media only screen and (max-width: 62em) {
+  .learn__left, .learn__right {
+    align-items: center;
+  }
+}
+.learn__item {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.learn__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #7540f4;
+  border-radius: 50%;
+}
+.learn__icon .icon {
+  height: 100%;
+  width: 100%;
+  transform: scale(0.5);
+  fill: #fff;
+}
+.learn .text {
+  font-size: 2rem;
+  color: #fff;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
