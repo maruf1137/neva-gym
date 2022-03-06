@@ -219,14 +219,14 @@
           top: 142%;
         }
       }
-      .slider__btn--right {
+      .slider__btn--left {
         right: 55%;
 
         @media only screen and (max-width: $mbl-land) {
           right: 60%;
         }
       }
-      .slider__btn--left {
+      .slider__btn--right {
         right: 45%;
 
         @media only screen and (max-width: $mbl-land) {

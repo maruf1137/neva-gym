@@ -2172,19 +2172,19 @@ a:hover {
     top: 142%;
   }
 }
-.about-page .testimonial__slider .slider__btn--right {
+.about-page .testimonial__slider .slider__btn--left {
   right: 55%;
 }
 @media only screen and (max-width: 35.9375em) {
-  .about-page .testimonial__slider .slider__btn--right {
+  .about-page .testimonial__slider .slider__btn--left {
     right: 60%;
   }
 }
-.about-page .testimonial__slider .slider__btn--left {
+.about-page .testimonial__slider .slider__btn--right {
   right: 45%;
 }
 @media only screen and (max-width: 35.9375em) {
-  .about-page .testimonial__slider .slider__btn--left {
+  .about-page .testimonial__slider .slider__btn--right {
     right: 40%;
   }
 }
