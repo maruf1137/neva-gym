@@ -75,7 +75,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 23.75em) {
+@media only screen and (max-width: 62em) {
   .home-page,
 .about-page {
     background-image: url("../img/bg-4.jpg");

@@ -63,13 +63,7 @@ body {
 
 .home-page,
 .about-page {
-  // @media only screen and (max-width: $tab-land) {
-  //   background-image: url("../img/bg-4.jpg");
-  //   height: auto;
-  //   @include bg-img;
-  //   background-position: bottom center;
-  // }
-  @media only screen and (max-width: $mbl-small) {
+  @media only screen and (max-width: $tab-land) {
     background-image: url("../img/bg-4.jpg");
     height: auto;
     @include bg-img;
