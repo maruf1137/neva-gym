@@ -22,13 +22,13 @@
     grid-column: 1/3;
   }
 
-  &__logo {
-    width: 13.7rem;
-    height: 2.9rem;
-    img {
-      @include img-size;
-    }
-  }
+  // &__logo {
+  //   width: 13.7rem;
+  //   height: 2.9rem;
+  //   img {
+  //     @include img-size;
+  //   }
+  // }
 
   .social__list {
     display: flex;
