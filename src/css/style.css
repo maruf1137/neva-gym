@@ -2179,7 +2179,7 @@ a:hover {
     right: 40%;
   }
 }
-@media only screen and (max-width: 23.75em) {
+@media only screen and (max-width: 30em) {
   .testimonial__slider .slider__btn--right {
     right: 35%;
   }
@@ -2197,7 +2197,7 @@ a:hover {
     right: 60%;
   }
 }
-@media only screen and (max-width: 23.75em) {
+@media only screen and (max-width: 30em) {
   .testimonial__slider .slider__btn--left {
     right: 55%;
   }

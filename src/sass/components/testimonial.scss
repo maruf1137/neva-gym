@@ -165,7 +165,7 @@
         right: 40%;
       }
 
-      @media only screen and (max-width: $mbl-small) {
+      @media only screen and (max-width: $mbl-port) {
         right: 35%;
       }
     }
@@ -178,7 +178,7 @@
       @media only screen and (max-width: $tab-land) {
         right: 60%;
       }
-      @media only screen and (max-width: $mbl-small) {
+      @media only screen and (max-width: $mbl-port) {
         right: 55%;
       }
     }
