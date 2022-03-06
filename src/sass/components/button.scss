@@ -8,6 +8,10 @@
   padding: 1.5rem 3.5rem;
   display: inline-block;
   text-align: center;
+
+  @media only screen and (max-width: $mbl-small) {
+    font-size: 1.2rem;
+  }
 }
 
 .btn-card {

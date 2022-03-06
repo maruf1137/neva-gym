@@ -6,7 +6,6 @@
 .challenge {
   display: grid;
   grid-template-columns: 72rem 1fr;
-  //   grid-template-columns: repeat(2, 72rem 1fr);
   gap: 5rem;
 
   @media only screen and (max-width: $tab-land) {
@@ -15,12 +14,14 @@
   }
 
   &__images {
-    // background-image: url("../img/challenge-img-1.png");
     @include bg-img;
     position: relative;
 
     @media only screen and (max-width: $tab-land) {
       height: 100rem;
+    }
+    @media only screen and (max-width: $mbl-land) {
+      height: 73rem;
     }
 
     .line-1 {
@@ -33,6 +34,15 @@
       left: 50%;
       transform: translate(-50%, -50%);
 
+      @media only screen and (max-width: $mbl-land) {
+        height: 75rem;
+        width: 75rem;
+      }
+      @media only screen and (max-width: $mbl-small) {
+        height: 65rem;
+        width: 65rem;
+      }
+
       div {
         height: 7.2rem;
         width: 7.2rem;
@@ -40,6 +50,15 @@
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(30px);
         position: absolute;
+
+        @media only screen and (max-width: $mbl-land) {
+          height: 6.2rem;
+          width: 6.2rem;
+        }
+        @media only screen and (max-width: $mbl-small) {
+          height: 5.5rem;
+          width: 5.5rem;
+        }
       }
 
       .circle-1 {
@@ -69,13 +88,30 @@
       left: 50%;
       transform: translate(-50%, -50%);
 
+      @media only screen and (max-width: $mbl-land) {
+        height: 48rem;
+        width: 48rem;
+      }
+      @media only screen and (max-width: $mbl-small) {
+        height: 38rem;
+        width: 38rem;
+      }
+
       div {
         height: 7.2rem;
         width: 7.2rem;
         border-radius: 50%;
-        // background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(30px);
         position: absolute;
+
+        @media only screen and (max-width: $mbl-land) {
+          height: 6.2rem;
+          width: 6.2rem;
+        }
+        @media only screen and (max-width: $mbl-small) {
+          height: 5.5rem;
+          width: 5.5rem;
+        }
       }
 
       .circle-1 {
@@ -104,14 +140,23 @@
       }
     }
     .line-3 {
-      height: 39rem;
-      width: 39rem;
+      height: 30rem;
+      width: 30rem;
       border-radius: 50%;
       border: 1px solid hsla(0, 0%, 100%, 0.6);
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @media only screen and (max-width: $mbl-land) {
+        height: 30rem;
+        width: 30rem;
+      }
+      @media only screen and (max-width: $mbl-small) {
+        height: 20rem;
+        width: 20rem;
+      }
 
       div {
         height: 7.2rem;
@@ -120,6 +165,15 @@
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(30px);
         position: absolute;
+
+        @media only screen and (max-width: $mbl-land) {
+          height: 6.2rem;
+          width: 6.2rem;
+        }
+        @media only screen and (max-width: $mbl-small) {
+          height: 5.5rem;
+          width: 5.5rem;
+        }
       }
 
       .circle-1 {
@@ -144,9 +198,24 @@
     transform: translateX(-50%);
     z-index: 1;
 
+    @media only screen and (max-width: $tab-land) {
+      height: 100%;
+      width: 100%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @media only screen and (max-width: $mbl-land) {
+      height: 90%;
+      width: 90%;
+    }
+    @media only screen and (max-width: $mbl-small) {
+      height: 80%;
+      width: 80%;
+    }
+
     img {
       @include img-size;
-      object-fit: cover;
+      object-position: top center;
     }
   }
 
