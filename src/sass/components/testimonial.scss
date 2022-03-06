@@ -151,14 +151,8 @@
         height: 2.5rem;
         width: 2.5rem;
         fill: $color-white;
-        opacity: 0.5;
+        opacity: 1;
         transition: all 0.3s;
-      }
-
-      &:hover {
-        .icon {
-          opacity: 1;
-        }
       }
     }
     .slider__btn--right {
@@ -199,10 +193,6 @@
       @media only screen and (max-width: $tab-land) {
         height: 40rem;
       }
-
-      // @media only screen and (max-width: $mbl-port) {
-      //   height: 36rem;
-      // }
 
       .slider {
         top: 0;

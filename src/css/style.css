@@ -2153,11 +2153,8 @@ a:hover {
   height: 2.5rem;
   width: 2.5rem;
   fill: #fff;
-  opacity: 0.5;
-  transition: all 0.3s;
-}
-.testimonial__slider .slider__btn:hover .icon {
   opacity: 1;
+  transition: all 0.3s;
 }
 .testimonial__slider .slider__btn--right {
   right: 25%;
