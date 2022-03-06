@@ -4,6 +4,10 @@
 
   @media only screen and (max-width: $mbl-small) {
     background: rgba(0, 0, 0, 0);
+
+    h2 {
+      font-size: 31px;
+    }
   }
 }
 

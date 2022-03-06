@@ -69,7 +69,7 @@ body {
     background-color: rgba(0, 0, 0, 0.541);
   }
 }
-@media only screen and (max-width: 23.75em) {
+@media only screen and (max-width: 30em) {
   .main-2 {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -1573,7 +1573,7 @@ a:hover {
 }
 @media only screen and (max-width: 35.9375em) {
   .experience__images {
-    width: 32.7rem;
+    width: 38.7rem;
     height: 36.7rem;
   }
 }
@@ -2503,6 +2503,9 @@ a:hover {
 @media only screen and (max-width: 23.75em) {
   .learn-section {
     background: rgba(0, 0, 0, 0);
+  }
+  .learn-section h2 {
+    font-size: 31px;
   }
 }
 
