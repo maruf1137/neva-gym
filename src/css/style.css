@@ -1437,13 +1437,18 @@ a:hover {
   transform: translateX(-50%);
   color: black;
   background: #fff;
-  padding: 1.5rem;
+  padding: 1rem;
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
   font-size: 2rem;
+}
+@media only screen and (max-width: 62em) {
+  .about .age {
+    padding: 1.5rem;
+  }
 }
 .about .age__start {
   margin-left: 1rem;

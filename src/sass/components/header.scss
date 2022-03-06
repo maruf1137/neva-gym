@@ -189,13 +189,17 @@
     transform: translateX(-50%);
     color: black;
     background: #fff;
-    padding: 1.5rem;
+    padding: 1rem;
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
     font-size: 2rem;
+
+    @media only screen and (max-width: $tab-land) {
+      padding: 1.5rem;
+    }
 
     &__start {
       margin-left: 1rem;
