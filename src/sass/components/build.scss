@@ -11,6 +11,12 @@
   &__content {
     padding: 5.6rem 3.8rem;
     background-color: $color-primary;
+
+    @media only screen and (max-width: $mbl-small) {
+      h2 {
+        font-size: 23px;
+      }
+    }
   }
 
   .btn {

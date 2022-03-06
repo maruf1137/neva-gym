@@ -38,6 +38,10 @@
         bottom: 1rem;
         left: 2rem;
       }
+      @media only screen and (max-width: $mbl-small) {
+        font-size: 28px;
+        line-height: 32px;
+      }
 
       span {
         color: #c2a2fd;
