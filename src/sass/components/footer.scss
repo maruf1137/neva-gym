@@ -65,20 +65,39 @@
   }
 
   &__copyright {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
-    gap: 1.5rem;
+    gap: 3rem 1.5rem;
+
+    @media only screen and (max-width: $tab-land) {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
 
     .text {
       font-size: 1.6rem;
+      justify-self: start;
+
+      @media only screen and (max-width: $tab-land) {
+        justify-self: center;
+        text-align: center;
+      }
     }
 
     .list {
       display: flex;
       align-items: center;
       gap: 2rem;
+      justify-self: end;
+
+      @media only screen and (max-width: $tab-land) {
+        justify-self: center;
+        grid-row: 1/2;
+        text-align: center;
+      }
     }
 
     .link {

@@ -21,8 +21,11 @@ html {
   @media only screen and (max-width: $laptop-port) {
     font-size: 50%;
   }
+  @media only screen and (max-width: $mbl-port) {
+    font-size: 42%;
+  }
   @media only screen and (max-width: $mbl-small) {
-    font-size: 45%;
+    font-size: 38%;
   }
 }
 

@@ -25,9 +25,14 @@ html {
     font-size: 50%;
   }
 }
+@media only screen and (max-width: 30em) {
+  html {
+    font-size: 42%;
+  }
+}
 @media only screen and (max-width: 23.75em) {
   html {
-    font-size: 45%;
+    font-size: 38%;
   }
 }
 
@@ -87,10 +92,21 @@ h1.heading span {
   text-transform: uppercase;
   display: block;
 }
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 35.9375em) {
   h1.heading {
-    font-size: 40px;
+    font-size: 6rem;
+    line-height: 6.8rem;
   }
+}
+@media only screen and (max-width: 23.75em) {
+  h1.heading {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+}
+
+.laptop-land-show h1 span {
+  display: inline;
 }
 
 h2.heading {
@@ -103,7 +119,9 @@ h2.heading {
 }
 @media only screen and (max-width: 30em) {
   h2.heading {
-    font-size: 28px;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -115,6 +133,12 @@ h2.heading {
   font-family: "Inter", sans-serif;
   line-height: 170%;
   letter-spacing: 0.02em;
+}
+@media only screen and (max-width: 30em) {
+  .text {
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
 }
 
 .center {
@@ -992,12 +1016,13 @@ a:hover {
 .btn {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #7540f4;
   padding: 1.5rem 3.5rem;
   display: inline-block;
+  text-align: center;
 }
 
 .btn-card {
@@ -1838,7 +1863,7 @@ a:hover {
 }
 
 .testimonial-section {
-  padding: 8rem 0;
+  padding: 8rem 0 0 0;
 }
 
 .testimonial {
@@ -2018,7 +2043,7 @@ a:hover {
 }
 .about-page .testimonial__slider {
   width: 100%;
-  height: 34vh;
+  height: 61vh;
 }
 .about-page .testimonial__slider .slider {
   top: 0;
@@ -2224,19 +2249,40 @@ a:hover {
   opacity: 1;
 }
 .footer__copyright {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 2rem 0;
-  gap: 1.5rem;
+  gap: 3rem 1.5rem;
+}
+@media only screen and (max-width: 62em) {
+  .footer__copyright {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
 }
 .footer__copyright .text {
   font-size: 1.6rem;
+  justify-self: start;
+}
+@media only screen and (max-width: 62em) {
+  .footer__copyright .text {
+    justify-self: center;
+    text-align: center;
+  }
 }
 .footer__copyright .list {
   display: flex;
   align-items: center;
   gap: 2rem;
+  justify-self: end;
+}
+@media only screen and (max-width: 62em) {
+  .footer__copyright .list {
+    justify-self: center;
+    grid-row: 1/2;
+    text-align: center;
+  }
 }
 .footer__copyright .link {
   color: #fff;
