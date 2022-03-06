@@ -194,7 +194,15 @@
 
     &__slider {
       width: 100%;
-      height: 61vh;
+      height: 37rem;
+
+      @media only screen and (max-width: $tab-land) {
+        height: 40rem;
+      }
+
+      // @media only screen and (max-width: $mbl-port) {
+      //   height: 36rem;
+      // }
 
       .slider {
         top: 0;
@@ -216,7 +224,7 @@
         top: 120%;
 
         @media only screen and (max-width: $tab-land) {
-          top: 142%;
+          top: 134%;
         }
       }
       .slider__btn--left {

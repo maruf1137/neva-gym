@@ -50,9 +50,9 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-@media only screen and (max-width: 23.75em) {
+@media only screen and (max-width: 62em) {
   .main-1 {
-    background-position: top right;
+    background-image: none;
   }
 }
 
@@ -63,9 +63,27 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 62em) {
+  .main-2 {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.541);
+  }
+}
 @media only screen and (max-width: 23.75em) {
   .main-2 {
-    background-position: top right;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 23.75em) {
+  .home-page,
+.about-page {
+    background-image: url("../img/bg-4.jpg");
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: bottom center;
   }
 }
 
@@ -1074,20 +1092,6 @@ a:hover {
   fill: #fff;
 }
 
-.logo {
-  font-size: 6.2rem;
-  font-weight: 900;
-  font-family: "Work Sans", sans-serif;
-  color: #fff;
-  font-style: italic;
-  text-transform: uppercase;
-}
-@media only screen and (max-width: 62em) {
-  .logo {
-    font-size: 5.5rem;
-  }
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -1105,7 +1109,7 @@ a:hover {
 }
 @media only screen and (max-width: 35.9375em) {
   .nav__logo {
-    width: 10rem;
+    width: 10.6rem;
     height: 2.3rem;
   }
 }
@@ -1315,8 +1319,14 @@ a:hover {
 }
 @media only screen and (max-width: 30em) {
   .header__img {
-    width: 33.5rem;
-    height: 38.8rem;
+    height: 55.5rem;
+    width: 45rem;
+  }
+}
+@media only screen and (max-width: 23.75em) {
+  .header__img {
+    width: 46.5rem;
+    height: 42.8rem;
   }
 }
 .header__img img {
@@ -1333,6 +1343,12 @@ a:hover {
   bottom: 16rem;
   left: 0;
   clip-path: polygon(82% 0, 100% 22%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+}
+@media only screen and (max-width: 23.75em) {
+  .price {
+    bottom: 2rem;
+    left: 5rem;
+  }
 }
 .price__sign {
   margin-bottom: 1.4rem;
@@ -1366,6 +1382,11 @@ a:hover {
   position: absolute;
   bottom: 20rem;
   right: 0;
+}
+@media only screen and (max-width: 23.75em) {
+  .join {
+    bottom: 6rem;
+  }
 }
 .join__title {
   font-size: 1.2rem;
@@ -1433,11 +1454,11 @@ a:hover {
   padding: 2rem;
   position: relative;
   width: 100%;
-  height: 34.5rem;
+  height: 345px;
 }
-@media only screen and (max-width: 62em) {
+@media only screen and (max-width: 23.75em) {
   .about__item {
-    height: 35.5rem;
+    height: 66.5rem;
   }
 }
 .about__img {
@@ -1554,6 +1575,12 @@ a:hover {
   .experience__images {
     width: 32.7rem;
     height: 36.7rem;
+  }
+}
+@media only screen and (max-width: 23.75em) {
+  .experience__images {
+    width: 41.7rem;
+    height: 40.7rem;
   }
 }
 .experience__img {
@@ -1780,12 +1807,6 @@ a:hover {
     width: 75rem;
   }
 }
-@media only screen and (max-width: 23.75em) {
-  .challenge__images .line-1 {
-    height: 65rem;
-    width: 65rem;
-  }
-}
 .challenge__images .line-1 div {
   height: 7.2rem;
   width: 7.2rem;
@@ -1834,14 +1855,8 @@ a:hover {
 }
 @media only screen and (max-width: 35.9375em) {
   .challenge__images .line-2 {
-    height: 48rem;
-    width: 48rem;
-  }
-}
-@media only screen and (max-width: 23.75em) {
-  .challenge__images .line-2 {
-    height: 38rem;
-    width: 38rem;
+    height: 55rem;
+    width: 55rem;
   }
 }
 .challenge__images .line-2 div {
@@ -1905,18 +1920,6 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media only screen and (max-width: 35.9375em) {
-  .challenge__images .line-3 {
-    height: 30rem;
-    width: 30rem;
-  }
-}
-@media only screen and (max-width: 23.75em) {
-  .challenge__images .line-3 {
-    height: 20rem;
-    width: 20rem;
-  }
-}
 .challenge__images .line-3 div {
   height: 7.2rem;
   width: 7.2rem;
@@ -1960,22 +1963,8 @@ a:hover {
 }
 @media only screen and (max-width: 62em) {
   .challenge__img {
-    height: 100%;
-    width: 100%;
     top: 50%;
     transform: translate(-50%, -50%);
-  }
-}
-@media only screen and (max-width: 35.9375em) {
-  .challenge__img {
-    height: 90%;
-    width: 90%;
-  }
-}
-@media only screen and (max-width: 23.75em) {
-  .challenge__img {
-    height: 80%;
-    width: 80%;
   }
 }
 .challenge__img img {
@@ -2202,7 +2191,12 @@ a:hover {
 }
 .about-page .testimonial__slider {
   width: 100%;
-  height: 61vh;
+  height: 37rem;
+}
+@media only screen and (max-width: 62em) {
+  .about-page .testimonial__slider {
+    height: 40rem;
+  }
 }
 .about-page .testimonial__slider .slider {
   top: 0;
@@ -2225,7 +2219,7 @@ a:hover {
 }
 @media only screen and (max-width: 62em) {
   .about-page .testimonial__slider .slider__btn {
-    top: 142%;
+    top: 134%;
   }
 }
 .about-page .testimonial__slider .slider__btn--left {
@@ -2355,6 +2349,11 @@ a:hover {
   background-repeat: no-repeat;
   padding-top: 25rem;
 }
+@media only screen and (max-width: 23.75em) {
+  .footer {
+    background-image: none;
+  }
+}
 .footer__container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -2374,6 +2373,15 @@ a:hover {
 }
 .footer__col-1 {
   grid-column: 1/3;
+}
+.footer__logo {
+  width: 13.7rem;
+  height: 2.9rem;
+}
+.footer__logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .footer .social__list {
   display: flex;

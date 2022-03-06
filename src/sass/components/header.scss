@@ -35,8 +35,12 @@
       margin: 0 auto;
     }
     @media only screen and (max-width: $mbl-port) {
-      width: 33.5rem;
-      height: 38.8rem;
+      height: 55.5rem;
+      width: 45rem;
+    }
+    @media only screen and (max-width: $mbl-small) {
+      width: 46.5rem;
+      height: 42.8rem;
     }
 
     img {
@@ -53,6 +57,11 @@
   bottom: 16rem;
   left: 0;
   clip-path: polygon(82% 0, 100% 22%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+
+  @media only screen and (max-width: $mbl-small) {
+    bottom: 2rem;
+    left: 5rem;
+  }
 
   &__sign {
     margin-bottom: 1.4rem;
@@ -91,6 +100,10 @@
   position: absolute;
   bottom: 20rem;
   right: 0;
+
+  @media only screen and (max-width: $mbl-small) {
+    bottom: 6rem;
+  }
 
   &__title {
     font-size: 1.2rem;
@@ -161,10 +174,13 @@
     padding: 2rem;
     position: relative;
     width: 100%;
-    height: 34.5rem;
+    height: 345px;
 
     @media only screen and (max-width: $tab-land) {
-      height: 35.5rem;
+      // height: 35.5rem;
+    }
+    @media only screen and (max-width: $mbl-small) {
+      height: 66.5rem;
     }
   }
 

@@ -41,8 +41,9 @@ body {
   height: auto;
   @include bg-img;
 
-  @media only screen and (max-width: $mbl-small) {
-    background-position: top right;
+  @media only screen and (max-width: $tab-land) {
+    // background-position: top right;
+    background-image: none;
   }
 }
 
@@ -51,10 +52,31 @@ body {
   height: auto;
   @include bg-img;
 
+  @media only screen and (max-width: $tab-land) {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.541);
+  }
   @media only screen and (max-width: $mbl-small) {
-    background-position: top right;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
+
+.home-page,
+.about-page {
+  // @media only screen and (max-width: $tab-land) {
+  //   background-image: url("../img/bg-4.jpg");
+  //   height: auto;
+  //   @include bg-img;
+  //   background-position: bottom center;
+  // }
+  @media only screen and (max-width: $mbl-small) {
+    background-image: url("../img/bg-4.jpg");
+    height: auto;
+    @include bg-img;
+    background-position: bottom center;
+  }
+}
+
 .custom-container {
   max-width: 140rem;
   margin: 0 auto;

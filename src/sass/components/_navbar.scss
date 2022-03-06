@@ -1,16 +1,3 @@
-.logo {
-  font-size: 6.2rem;
-  font-weight: 900;
-  font-family: $font-primary;
-  color: $color-white;
-  font-style: italic;
-  text-transform: uppercase;
-
-  @media only screen and (max-width: $tab-land) {
-    font-size: 5.5rem;
-  }
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -26,7 +13,7 @@
     height: 2.9rem;
 
     @media only screen and (max-width: $mbl-land) {
-      width: 10rem;
+      width: 10.6rem;
       height: 2.3rem;
     }
 

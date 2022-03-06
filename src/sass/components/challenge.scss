@@ -38,10 +38,6 @@
         height: 75rem;
         width: 75rem;
       }
-      @media only screen and (max-width: $mbl-small) {
-        height: 65rem;
-        width: 65rem;
-      }
 
       div {
         height: 7.2rem;
@@ -89,12 +85,8 @@
       transform: translate(-50%, -50%);
 
       @media only screen and (max-width: $mbl-land) {
-        height: 48rem;
-        width: 48rem;
-      }
-      @media only screen and (max-width: $mbl-small) {
-        height: 38rem;
-        width: 38rem;
+        height: 55rem;
+        width: 55rem;
       }
 
       div {
@@ -149,15 +141,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
 
-      @media only screen and (max-width: $mbl-land) {
-        height: 30rem;
-        width: 30rem;
-      }
-      @media only screen and (max-width: $mbl-small) {
-        height: 20rem;
-        width: 20rem;
-      }
-
       div {
         height: 7.2rem;
         width: 7.2rem;
@@ -199,18 +182,18 @@
     z-index: 1;
 
     @media only screen and (max-width: $tab-land) {
-      height: 100%;
-      width: 100%;
+      // height: 100%;
+      // width: 100%;
       top: 50%;
       transform: translate(-50%, -50%);
     }
     @media only screen and (max-width: $mbl-land) {
-      height: 90%;
-      width: 90%;
+      // height: 90%;
+      // width: 90%;
     }
     @media only screen and (max-width: $mbl-small) {
-      height: 80%;
-      width: 80%;
+      // height: 80%;
+      // width: 80%;
     }
 
     img {

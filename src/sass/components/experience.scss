@@ -73,6 +73,10 @@
       width: 32.7rem;
       height: 36.7rem;
     }
+    @media only screen and (max-width: $mbl-small) {
+      width: 41.7rem;
+      height: 40.7rem;
+    }
   }
 
   &__img {
