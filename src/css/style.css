@@ -58,6 +58,11 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 23.75em) {
+  .main-2 {
+    background-position: top right;
+  }
+}
 
 .custom-container {
   max-width: 140rem;
@@ -363,6 +368,21 @@ a:hover {
 @media only screen and (max-width: 35.9375em) {
   .mbl-land-show {
     display: block;
+  }
+}
+
+.mbl-small-show {
+  display: none;
+}
+@media only screen and (max-width: 23.75em) {
+  .mbl-small-show {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 23.75em) {
+  .mbl-small-hide {
+    display: none;
   }
 }
 
@@ -2456,7 +2476,12 @@ a:hover {
 }
 .learn-section {
   padding: 8rem 0;
-  background: rgba(0, 0, 0, 0.466);
+  background: rgba(0, 0, 0, 0.479);
+}
+@media only screen and (max-width: 23.75em) {
+  .learn-section {
+    background: rgba(0, 0, 0, 0);
+  }
 }
 
 .learn {

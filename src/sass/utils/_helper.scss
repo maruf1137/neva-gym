@@ -67,6 +67,19 @@
     display: block;
   }
 }
+.mbl-small-show {
+  display: none;
+
+  @media only screen and (max-width: $mbl-small) {
+    display: block;
+  }
+}
+
+.mbl-small-hide {
+  @media only screen and (max-width: $mbl-small) {
+    display: none;
+  }
+}
 
 .hide {
   opacity: 0;
@@ -191,8 +204,6 @@
 .mr-10 {
   margin-right: 10rem !important;
 }
-
-
 
 // ======================================
 // padding classes

@@ -1,6 +1,10 @@
 .learn-section {
   padding: 8rem 0;
-  background: rgba(0, 0, 0, 0.466);
+  background: rgba(0, 0, 0, 0.479);
+
+  @media only screen and (max-width: $mbl-small) {
+    background: rgba(0, 0, 0, 0);
+  }
 }
 
 .learn {
