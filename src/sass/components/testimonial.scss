@@ -92,6 +92,10 @@
       padding: 2rem 3rem;
       margin-right: 2rem;
 
+      @media only screen and (max-width: $tab-land) {
+        margin-right: 0;
+      }
+
       &__stars {
         display: flex;
         align-items: center;
@@ -106,7 +110,7 @@
 
       .text {
         font-size: 1.6rem;
-        opacity: 0.5;
+        opacity: 0.4;
         text-align: start;
       }
 
@@ -203,10 +207,18 @@
       .slide {
         @media only screen and (max-width: $tab-land) {
           width: 50%;
+
+          .card {
+            margin-right: 2rem;
+          }
         }
         @media only screen and (max-width: $mbl-land) {
           width: 100%;
           text-align: center;
+
+          .card {
+            margin-right: 0;
+          }
         }
       }
 

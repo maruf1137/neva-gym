@@ -2,7 +2,7 @@
   padding: 8rem 0;
   background: rgba(0, 0, 0, 0.479);
 
-  @media only screen and (max-width: $mbl-small) {
+  @media only screen and (max-width: $mbl-port) {
     background: rgba(0, 0, 0, 0);
 
     h2 {

@@ -1456,9 +1456,14 @@ a:hover {
   width: 100%;
   height: 345px;
 }
+@media only screen and (max-width: 62em) {
+  .about__item {
+    height: 62.5rem;
+  }
+}
 @media only screen and (max-width: 23.75em) {
   .about__item {
-    height: 66.5rem;
+    height: 60.5rem;
   }
 }
 .about__img {
@@ -2103,6 +2108,11 @@ a:hover {
   padding: 2rem 3rem;
   margin-right: 2rem;
 }
+@media only screen and (max-width: 62em) {
+  .testimonial__slider .card {
+    margin-right: 0;
+  }
+}
 .testimonial__slider .card__stars {
   display: flex;
   align-items: center;
@@ -2115,7 +2125,7 @@ a:hover {
 }
 .testimonial__slider .card .text {
   font-size: 1.6rem;
-  opacity: 0.5;
+  opacity: 0.4;
   text-align: start;
 }
 .testimonial__slider .card .user {
@@ -2204,11 +2214,17 @@ a:hover {
   .about-page .testimonial__slider .slide {
     width: 50%;
   }
+  .about-page .testimonial__slider .slide .card {
+    margin-right: 2rem;
+  }
 }
 @media only screen and (max-width: 35.9375em) {
   .about-page .testimonial__slider .slide {
     width: 100%;
     text-align: center;
+  }
+  .about-page .testimonial__slider .slide .card {
+    margin-right: 0;
   }
 }
 .about-page .testimonial__slider .slider__btn {
@@ -2497,7 +2513,7 @@ a:hover {
   padding: 8rem 0;
   background: rgba(0, 0, 0, 0.479);
 }
-@media only screen and (max-width: 23.75em) {
+@media only screen and (max-width: 30em) {
   .learn-section {
     background: rgba(0, 0, 0, 0);
   }
