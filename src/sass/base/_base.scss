@@ -40,6 +40,10 @@ body {
   background-image: url("../img/bg-1.jpg");
   height: auto;
   @include bg-img;
+
+  @media only screen and (max-width: $mbl-small) {
+    background-position: top right;
+  }
 }
 
 .main-2 {

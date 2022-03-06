@@ -50,6 +50,11 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 23.75em) {
+  .main-1 {
+    background-position: top right;
+  }
+}
 
 .main-2 {
   background-image: url("../img/bg-2.jpg");
