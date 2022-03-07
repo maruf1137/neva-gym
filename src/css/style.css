@@ -2040,6 +2040,15 @@ a:hover {
 }
 
 .testimonial-section {
+  padding: 8rem 0;
+}
+@media only screen and (max-width: 62em) {
+  .testimonial-section {
+    padding: 8rem 0 0 0;
+  }
+}
+
+.about-page .testimonial-section {
   padding: 8rem 0 0 0;
 }
 
@@ -2090,7 +2099,7 @@ a:hover {
 }
 @media only screen and (max-width: 62em) {
   .testimonial__slider {
-    height: 31rem;
+    height: 42rem;
     width: 100%;
   }
 }
@@ -2123,6 +2132,11 @@ a:hover {
 }
 @media only screen and (max-width: 62em) {
   .testimonial__slider .slide {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .testimonial__slider .slide {
     width: 100%;
   }
 }
@@ -2132,7 +2146,7 @@ a:hover {
   padding: 2rem 3rem;
   margin-right: 2rem;
 }
-@media only screen and (max-width: 62em) {
+@media only screen and (max-width: 35.9375em) {
   .testimonial__slider .card {
     margin-right: 0;
   }
@@ -2162,26 +2176,40 @@ a:hover {
   opacity: 1;
   color: #fff;
 }
+.testimonial__slider .slider-btns {
+  position: absolute;
+  top: -10rem;
+  right: 25rem;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  gap: 0 5rem;
+}
+@media only screen and (max-width: 75em) {
+  .testimonial__slider .slider-btns {
+    right: 30rem;
+  }
+}
+@media only screen and (max-width: 62em) {
+  .testimonial__slider .slider-btns {
+    top: 140%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 30em) {
+  .testimonial__slider .slider-btns {
+    top: 120%;
+  }
+}
 .testimonial__slider .slider__btn {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.25);
   height: 5rem;
   width: 5rem;
-  position: absolute;
-  top: -9rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media only screen and (max-width: 62em) {
-  .testimonial__slider .slider__btn {
-    top: 26rem;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .testimonial__slider .slider__btn {
-    top: 30rem;
-  }
 }
 .testimonial__slider .slider__btn .icon {
   height: 2.5rem;
@@ -2189,42 +2217,6 @@ a:hover {
   fill: #fff;
   opacity: 1;
   transition: all 0.3s;
-}
-.testimonial__slider .slider__btn--right {
-  right: 25%;
-}
-@media only screen and (max-width: 64em) {
-  .testimonial__slider .slider__btn--right {
-    right: 30%;
-  }
-}
-@media only screen and (max-width: 62em) {
-  .testimonial__slider .slider__btn--right {
-    right: 40%;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .testimonial__slider .slider__btn--right {
-    right: 35%;
-  }
-}
-.testimonial__slider .slider__btn--left {
-  right: 35%;
-}
-@media only screen and (max-width: 64em) {
-  .testimonial__slider .slider__btn--left {
-    right: 40%;
-  }
-}
-@media only screen and (max-width: 62em) {
-  .testimonial__slider .slider__btn--left {
-    right: 60%;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .testimonial__slider .slider__btn--left {
-    right: 55%;
-  }
 }
 
 .about-page .testimonial {
@@ -2261,38 +2253,19 @@ a:hover {
     margin-right: 0;
   }
 }
-.about-page .testimonial__slider .slider__btn {
+.about-page .testimonial__slider .slider-btns {
   top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media only screen and (max-width: 62em) {
-  .about-page .testimonial__slider .slider__btn {
-    top: 134%;
+  .about-page .testimonial__slider .slider-btns {
+    top: 140%;
   }
-}
-.about-page .testimonial__slider .slider__btn--left {
-  right: 55%;
 }
 @media only screen and (max-width: 35.9375em) {
-  .about-page .testimonial__slider .slider__btn--left {
-    right: 60%;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .about-page .testimonial__slider .slider__btn--left {
-    right: 35%;
-  }
-}
-.about-page .testimonial__slider .slider__btn--right {
-  right: 45%;
-}
-@media only screen and (max-width: 35.9375em) {
-  .about-page .testimonial__slider .slider__btn--right {
-    right: 40%;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .about-page .testimonial__slider .slider__btn--right {
-    right: 55%;
+  .about-page .testimonial__slider .slider-btns {
+    top: 120%;
   }
 }
 

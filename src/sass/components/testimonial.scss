@@ -1,5 +1,15 @@
 .testimonial-section {
-  padding: 8rem 0 0 0;
+  padding: 8rem 0;
+
+  @media only screen and (max-width: $tab-land) {
+    padding: 8rem 0 0 0;
+  }
+}
+
+.about-page {
+  .testimonial-section {
+    padding: 8rem 0 0 0;
+  }
 }
 
 .testimonial {
@@ -51,7 +61,7 @@
     overflow: hidden;
 
     @media only screen and (max-width: $tab-land) {
-      height: 31rem;
+      height: 42rem;
       width: 100%;
     }
 
@@ -82,6 +92,9 @@
       overflow: hidden;
 
       @media only screen and (max-width: $tab-land) {
+        width: 50%;
+      }
+      @media only screen and (max-width: $mbl-land) {
         width: 100%;
       }
     }
@@ -92,7 +105,7 @@
       padding: 2rem 3rem;
       margin-right: 2rem;
 
-      @media only screen and (max-width: $tab-land) {
+      @media only screen and (max-width: $mbl-land) {
         margin-right: 0;
       }
 
@@ -127,24 +140,36 @@
       }
     }
 
+    .slider-btns {
+      position: absolute;
+      top: -10rem;
+      right: 25rem;
+      width: 15rem;
+      display: flex;
+      align-items: center;
+      gap: 0 5rem;
+
+      @media only screen and (max-width: $laptop-land) {
+        right: 30rem;
+      }
+      @media only screen and (max-width: $tab-land) {
+        top: 140%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @media only screen and (max-width: $mbl-port) {
+        top: 120%;
+      }
+    }
+
     .slider__btn {
       background-color: transparent;
       border: 1px solid rgba(255, 255, 255, 0.25);
       height: 5rem;
       width: 5rem;
-      position: absolute;
-      top: -9rem;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      @media only screen and (max-width: $tab-land) {
-        top: 26rem;
-      }
-
-      @media only screen and (max-width: $mbl-port) {
-        top: 30rem;
-      }
 
       .icon {
         height: 2.5rem;
@@ -152,34 +177,6 @@
         fill: $color-white;
         opacity: 1;
         transition: all 0.3s;
-      }
-    }
-    .slider__btn--right {
-      right: 25%;
-
-      @media only screen and (max-width: $laptop-port) {
-        right: 30%;
-      }
-
-      @media only screen and (max-width: $tab-land) {
-        right: 40%;
-      }
-
-      @media only screen and (max-width: $mbl-port) {
-        right: 35%;
-      }
-    }
-    .slider__btn--left {
-      right: 35%;
-      @media only screen and (max-width: $laptop-port) {
-        right: 40%;
-      }
-
-      @media only screen and (max-width: $tab-land) {
-        right: 60%;
-      }
-      @media only screen and (max-width: $mbl-port) {
-        right: 55%;
       }
     }
   }
@@ -224,33 +221,47 @@
         }
       }
 
-      .slider__btn {
+      .slider-btns {
         top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
 
         @media only screen and (max-width: $tab-land) {
-          top: 134%;
+          top: 140%;
         }
-      }
-      .slider__btn--left {
-        right: 55%;
 
         @media only screen and (max-width: $mbl-land) {
-          right: 60%;
-        }
-        @media only screen and (max-width: $mbl-port) {
-          right: 35%;
+          top: 120%;
         }
       }
-      .slider__btn--right {
-        right: 45%;
 
-        @media only screen and (max-width: $mbl-land) {
-          right: 40%;
-        }
-        @media only screen and (max-width: $mbl-port) {
-          right: 55%;
-        }
-      }
+      // .slider__btn {
+      //   top: 120%;
+
+      //   @media only screen and (max-width: $tab-land) {
+      //     top: 134%;
+      //   }
+      // }
+      // .slider__btn--left {
+      //   right: 55%;
+
+      //   @media only screen and (max-width: $mbl-land) {
+      //     right: 60%;
+      //   }
+      //   @media only screen and (max-width: $mbl-port) {
+      //     right: 35%;
+      //   }
+      // }
+      // .slider__btn--right {
+      //   right: 45%;
+
+      //   @media only screen and (max-width: $mbl-land) {
+      //     right: 40%;
+      //   }
+      //   @media only screen and (max-width: $mbl-port) {
+      //     right: 55%;
+      //   }
+      // }
     }
   }
 }
