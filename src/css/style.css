@@ -1338,13 +1338,7 @@ a:hover {
 @media only screen and (max-width: 30em) {
   .header__img {
     height: 45.5rem;
-    width: 42rem;
-  }
-}
-@media only screen and (max-width: 23.75em) {
-  .header__img {
-    width: 40.5rem;
-    height: 43.8rem;
+    width: 38rem;
   }
 }
 .header__img img {
