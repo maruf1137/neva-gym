@@ -1,6 +1,7 @@
 .challenge-section {
   padding: 10rem 0;
   position: relative;
+  overflow: hidden;
 }
 
 .challenge {
@@ -16,6 +17,7 @@
   &__images {
     @include bg-img;
     position: relative;
+    // display: none;
 
     @media only screen and (max-width: $tab-land) {
       height: 100rem;
@@ -189,6 +191,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    // display: none;
 
     @media only screen and (max-width: $tab-land) {
       // height: 100%;
