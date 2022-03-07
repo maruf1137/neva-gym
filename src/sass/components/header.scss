@@ -35,17 +35,17 @@
       margin: 0 auto;
     }
     @media only screen and (max-width: $mbl-land) {
-      height: 45.5rem;
-      width: 42rem;
+      height: 55.5rem;
+      width: 48rem;
     }
     @media only screen and (max-width: $mbl-port) {
-      height: 45.5rem;
-      width: 38rem;
+      width: 80vw;
+      height: 48.5rem;
+      transform: translateX(-3rem);
     }
-    // @media only screen and (max-width: $mbl-small) {
-    //   width: 40.5rem;
-    //   height: 43.8rem;
-    // }
+    @media only screen and (max-width: $mbl-small) {
+      // width: 80vw;
+    }
 
     img {
       @include img-size;
@@ -103,7 +103,7 @@
   display: inline-block;
   position: absolute;
   bottom: 20rem;
-  right: 0;
+  right: 2rem;
 
   @media only screen and (max-width: $mbl-land) {
     bottom: 6rem;
