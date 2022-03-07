@@ -34,6 +34,10 @@
       transform: translateY(0);
       margin: 0 auto;
     }
+    @media only screen and (max-width: $mbl-land) {
+      height: 45.5rem;
+      width: 42rem;
+    }
     @media only screen and (max-width: $mbl-port) {
       height: 45.5rem;
       width: 38rem;
@@ -58,7 +62,7 @@
   left: 0;
   clip-path: polygon(82% 0, 100% 22%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
 
-  @media only screen and (max-width: $mbl-port) {
+  @media only screen and (max-width: $mbl-land) {
     bottom: 2rem;
     left: 5rem;
   }
@@ -101,7 +105,7 @@
   bottom: 20rem;
   right: 0;
 
-  @media only screen and (max-width: $mbl-port) {
+  @media only screen and (max-width: $mbl-land) {
     bottom: 6rem;
   }
 
