@@ -33,6 +33,15 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      background-image: radial-gradient(
+        rgba(81, 59, 138, 0.882),
+        rgba(81, 59, 138, 0.6),
+        rgba(81, 59, 138, 0.4),
+        rgba(81, 59, 138, 0.1),
+        rgba(81, 59, 138, 0),
+        rgba(81, 59, 138, 0),
+        rgba(81, 59, 138, 0)
+      );
 
       @media only screen and (max-width: $mbl-land) {
         height: 75rem;

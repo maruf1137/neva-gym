@@ -49,6 +49,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-position: bottom center;
 }
 @media only screen and (max-width: 62em) {
   .main-1 {
@@ -65,13 +66,8 @@ body {
 }
 @media only screen and (max-width: 62em) {
   .main-2 {
-    background-image: none;
-    background-color: rgba(0, 0, 0, 0.541);
-  }
-}
-@media only screen and (max-width: 30em) {
-  .main-2 {
     background-color: rgba(0, 0, 0, 0);
+    background-image: none;
   }
 }
 
@@ -84,6 +80,28 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-position: bottom center;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .home-page {
+    background-image: url("../img/bg-4.jpg");
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .about-page {
+    background-image: url("../img/bg-4.jpg");
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 }
 
@@ -1458,12 +1476,17 @@ a:hover {
 }
 @media only screen and (max-width: 62em) {
   .about__item {
-    height: 62.5rem;
+    height: 50.5rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
+  .about__item {
+    height: 56.5rem;
   }
 }
 @media only screen and (max-width: 23.75em) {
   .about__item {
-    height: 56.5rem;
+    height: 60.5rem;
   }
 }
 .about__img {
@@ -1805,6 +1828,7 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-image: radial-gradient(rgba(81, 59, 138, 0.882), rgba(81, 59, 138, 0.6), rgba(81, 59, 138, 0.4), rgba(81, 59, 138, 0.1), rgba(81, 59, 138, 0), rgba(81, 59, 138, 0), rgba(81, 59, 138, 0));
 }
 @media only screen and (max-width: 35.9375em) {
   .challenge__images .line-1 {
@@ -2253,6 +2277,11 @@ a:hover {
     right: 60%;
   }
 }
+@media only screen and (max-width: 30em) {
+  .about-page .testimonial__slider .slider__btn--left {
+    right: 35%;
+  }
+}
 .about-page .testimonial__slider .slider__btn--right {
   right: 45%;
 }
@@ -2261,9 +2290,41 @@ a:hover {
     right: 40%;
   }
 }
+@media only screen and (max-width: 30em) {
+  .about-page .testimonial__slider .slider__btn--right {
+    right: 55%;
+  }
+}
 
 .team-section {
   padding: 2rem 0 8rem 0;
+  position: relative;
+}
+@media only screen and (max-width: 62em) {
+  .team-section {
+    background-image: linear-gradient(rgba(81, 59, 138, 0), rgba(81, 59, 138, 0), rgba(81, 59, 138, 0), rgba(81, 59, 138, 0), rgba(81, 59, 138, 0.1), rgba(81, 59, 138, 0.2), rgba(81, 59, 138, 0.4), rgba(81, 59, 138, 0));
+  }
+}
+.team-section::before, .team-section::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+}
+@media only screen and (max-width: 62em) {
+  .team-section::before, .team-section::after {
+    display: none;
+  }
+}
+.team-section::before {
+  background-image: linear-gradient(to right bottom, rgba(81, 59, 138, 0.8), rgba(81, 59, 138, 0.6), rgba(81, 59, 138, 0.4), rgba(81, 59, 138, 0.25), rgba(81, 59, 138, 0.1), rgba(81, 59, 138, 0), rgba(81, 59, 138, 0), rgba(81, 59, 138, 0), rgba(81, 59, 138, 0));
+  left: 0;
+}
+.team-section::after {
+  background-image: linear-gradient(to left bottom, rgba(81, 59, 138, 0.6), rgba(81, 59, 138, 0.6), rgba(81, 59, 138, 0.4), rgba(81, 59, 138, 0.25), rgba(81, 59, 138, 0.1), rgba(81, 59, 138, 0), rgba(81, 59, 138, 0), rgba(81, 59, 138, 0), rgba(81, 59, 138, 0));
+  right: 0;
 }
 .team-section h2 {
   margin-bottom: 12rem;
@@ -2521,11 +2582,11 @@ a:hover {
 }
 .learn-section {
   padding: 8rem 0;
-  background: rgba(0, 0, 0, 0.479);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
 }
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 62em) {
   .learn-section {
-    background: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   }
   .learn-section h2 {
     font-size: 31px;

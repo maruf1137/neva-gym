@@ -40,9 +40,9 @@ body {
   background-image: url("../img/bg-1.jpg");
   height: auto;
   @include bg-img;
+  background-position: bottom center;
 
   @media only screen and (max-width: $tab-land) {
-    // background-position: top right;
     background-image: none;
   }
 }
@@ -52,12 +52,13 @@ body {
   height: auto;
   @include bg-img;
 
+  // @media only screen and (max-width: $tab-land) {
+  //   background-image: none;
+  //   background-color: rgba(0, 0, 0, 0.541);
+  // }
   @media only screen and (max-width: $tab-land) {
-    background-image: none;
-    background-color: rgba(0, 0, 0, 0.541);
-  }
-  @media only screen and (max-width: $mbl-port) {
     background-color: rgba(0, 0, 0, 0);
+    background-image: none;
   }
 }
 
@@ -68,6 +69,22 @@ body {
     height: auto;
     @include bg-img;
     background-position: bottom center;
+  }
+}
+.home-page {
+  @media only screen and (max-width: $tab-land) {
+    background-image: url("../img/bg-4.jpg");
+    height: auto;
+    @include bg-img;
+    background-position: top center;
+  }
+}
+.about-page {
+  @media only screen and (max-width: $tab-land) {
+    background-image: url("../img/bg-4.jpg");
+    height: auto;
+    @include bg-img;
+    background-position: top center;
   }
 }
 

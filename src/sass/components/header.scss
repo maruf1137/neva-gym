@@ -177,10 +177,13 @@
     height: 345px;
 
     @media only screen and (max-width: $tab-land) {
-      height: 62.5rem;
+      height: 50.5rem;
+    }
+    @media only screen and (max-width: $mbl-land) {
+      height: 56.5rem;
     }
     @media only screen and (max-width: $mbl-small) {
-      height: 56.5rem;
+      height: 60.5rem;
     }
   }
 

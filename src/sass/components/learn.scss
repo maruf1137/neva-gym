@@ -1,9 +1,10 @@
 .learn-section {
   padding: 8rem 0;
-  background: rgba(0, 0, 0, 0.479);
+  // background: rgba(0, 0, 0, 0.479);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
 
-  @media only screen and (max-width: $mbl-port) {
-    background: rgba(0, 0, 0, 0);
+  @media only screen and (max-width: $tab-land) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 
     h2 {
       font-size: 31px;
